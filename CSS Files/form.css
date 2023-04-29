@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+
+:root {
+  --white: #fff;
+  --light-Green: #94bb44;
+  --dark-Sea: #004a4d;
+  --dark-Sea-Hover: #014548;
+  --light-Green-Hover: #7ba327; 
+}
+
+*{
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.widthhundred{
+    width: 100%;
+}
+
+.heighthundred{
+    height: 100%;
+}
+
+.backgroundLightGreen{
+    background-color: var(--light-Green);
+}
+
+.colorWhite{
+    color: #fff;
+}
+
+.white_background{
+    background-color: #fff;
+}
+
+.backgroundDarkSea{
+    background-color: var(--dark-Sea);
+}
+
+
+/* Registrantion Form CSS */
+
+
+.R-Form-Heading h1{
+    font-family: 'PT Serif', serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+
+}
+
+.R-Form{
+    border: 3px solid #94bb44;
+    background-color: #f4ffe1;
+}
+
+.R-Form-Heading{
+    border: 1px solid var(--dark-Sea);
+    border-radius: 10px;
+}
+
+.S-P-Details{
+    color: var(--dark-Sea);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    border: 2px solid var(--dark-Sea-Hover);
+    /* border-radius: 10px 10px 0px 0px; */
+    border-radius: 10px;
+    padding: 8px 0;
+}
+
+.S-P-Details:hover{
+    color: var(--dark-Sea-Hover);
+}
+
+.S-P-Details i{
+    color: #94bb44;
+}
+.S-P-Details:hover i{
+    color: #004a4d;
+}
+
+.S-P-Details-DD{
+    border: 2px solid var(--dark-Sea-Hover);
+    border-top: 0;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+.N-label{
+    font-size: 16px;
+    font-weight: 600;
+    width: 15%;
+}
+
+
+.icon {
+  transition: transform 0.4s ease;
+}
+
+.icon.color {
+  color: #004a4d;
+}
+
+.link:hover{
+    background-color: #dbf2f32d;
+}
+
+.link.color {
+  background-color: #004a4d2d;
+}
+
+/* Profile Picture CSS */
+.profile-pic{
+    display: flex;
+    flex-direction: column;
+}
+.profile-pic img{
+   
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 0px #c1c1c1;
+    /* cursor: pointer; */
+    width: 100px;
+    height: 100px;
+}   
+.profile-badge{
+    /* border:1px solid #c1c1c1; */
+    padding:5px;
+    position: relative;
+}
+
+.input_box_Registration1{
+    font-size: 15px;
+    padding: 8px 10px;
+    display:block;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #999;
+    font-weight: 500;
+    color: #222;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    background: transparent;
+}
+/* Profile Picture CSS End  */
+
+
+/* Gender Radio Button CSS */
+.Radio_Gender {
+    display: flex;
+    align-items: center;
+}
+
+.radio_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark-Sea);
+    padding: 6px 0;
+    border-radius: 5px;
+    box-shadow: inset 0.5px 0.5px 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+.mfo-input[type="radio"] {
+    appearance: none;
+    display: none;
+}
+
+.mfo-label {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+    margin: 0 6px;
+    padding: 4px 6px;
+    text-align: center;
+    border-radius: 100px;
+    overflow: hidden;
+    transition: linear 0.2s;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.mfo-input[type="radio"]:checked + .mfo-label {
+    background-color: var(--light-Green);
+    color: var(--white);
+}
+/* Gender Radio Button CSS end */
+
+.dob-field input{
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: 1px solid var(--dark-Sea);
+}
+.dob-field input:focus{
+    border: 1px solid var(--dark-Sea) !important;
+    box-shadow: inset 0px 0px 10px #94bb44 !important;
+}
+
+
+/* Department Select CSS */
+
+.dep-select {
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 5px;
+  /* border: none; */
+  /* background-color: #f1f1f1;  */
+}
+
+.dep-select:focus {
+  outline: none;
+  box-shadow: inset 0 0 10px #94bb44;
+}
+
+/* Department Select CSS ENd  */
+
+
+
+
+/* File Upload CSS */
+.file-upload {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+.file-upload__input {
+  display: none;
+}
+
+.file-upload__button {
+  /* -webkit-appearance: none; */
+  background: #004a4d;
+  border: 2px solid #004a4d;
+  border-radius: 4px;
+  outline: none;
+  padding: 0.5em 0.8em;
+  margin-right: 15px;
+  color: #ffffff;
+  font-size: 1em;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.file-upload__button:active {
+  background: #014548;
+}
+
+.file-upload__label {
+  max-width: 250px;
+  font-size: 0.95em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: "Quicksand", sans-serif;
+}
+
+/* File Upload CSS end */
+
+/* Skillset checkboxes CSS */
+.skillset_checkboxes input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: -3px 0;
+  border: 3px solid #004a4d;
+  border-radius: 0.25em;
+  background-color: white;
+  /* transition: background-color 0.2s ease-in-out; */
+}
+
+.skillset_checkboxes input[type="checkbox"]:checked {
+  background-color: #94bb44;
+  border-color: #004a4d;
+}
+.skillset_checkboxes input[type="checkbox"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #94bb44;
+}
+
+
+
+.skillset_checkboxes label{
+    font-weight: 600;
+}
+
+.input_field .checkbox-area{
+    width: 60% ;
+}
+
+
+/* Skillset checkboxes CSS */
+
+/* Registration Form CSS end */
+
+
+
+
+
+
+
+
+/* Form CSS */
+.input_field .input_box_Registration{
+    width: 60% ;
+}
+
+.input_box_Registration{
+    /* padding: 1rem; */
+    padding-bottom: 0px; 
+    padding-right: 0px;
+    position: relative;
+}
+
+.input_box_Registration input{
+    font-size: 15px;
+    padding: 8px 10px;
+    display:block;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #999;
+    font-weight: 500;
+    color: #222;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    background: transparent;
+}
+.input_box_Registration textarea{
+    font-size: 15px;
+    padding: 8px 10px;
+    display:block;
+    width: 100%;
+    border: 1px solid #999;
+    font-weight: 500;
+    color: #222;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    background: transparent;
+}
+
+.input_box_Registration input::placeholder{
+    visibility: hidden;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: .5px;
+}
+.input_box_Registration textarea::placeholder{
+    visibility: hidden;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: .5px;
+}
+
+.input_box_Registration input:focus{
+    outline: none;
+    border: 1px solid var(--dark-Sea);
+    box-shadow: inset 0px 0px 10px #94bb44;
+    color: #222;  
+}
+.input_box_Registration textarea:focus{
+    outline: none;
+    border: 1px solid #002a66;
+    box-shadow: inset 0px 0px 10px #94bb44;
+    color: #222;  
+}
+
+.input_box_Registration input:focus::placeholder{
+    visibility: visible;
+    color: #050505;
+}
+.input_box_Registration textarea:focus::placeholder{
+    visibility: visible;
+    color: #050505;
+}
+
+.input-label-registration{
+    color: #555;
+    font-size: 15px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    top: 9px;
+    letter-spacing: .5px;
+    padding: 0px 5px;
+    transition: .3s;
+    background: #fff;
+}
+.textarea-label{
+    color: #555;
+    font-size: 15px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    top: 10px;
+    letter-spacing: .5px;
+    padding: 0px 5px;
+    transition: .2s;
+    background: #fff;
+}
+
+.input_box_Registration input:focus ~ .input-label-registration,
+.input_box_Registration input:valid ~ .input-label-registration{
+    top: -10px;
+    left: 5px;
+    font-size: 13px;
+    color: #004a4d;
+    font-weight: 500;
+}
+.input_box_Registration textarea:focus ~ .textarea-label{
+    top: -10px;
+    left: 8px;
+    font-size: 12px;
+    color: #7ba327;
+    font-weight: 500;
+}
+
+/* .submit-btn button{
+    color: #002a66;
+    font-weight: 500;
+    background-color: white;
+    border: 2px solid #002a66;
+    border-radius: 8px;
+}
+.submit-btn button:hover{
+    color: #fff;
+    font-weight: 500;
+    background-color: #002a66;
+    border: 2px solid #002a66;
+    border-radius: 8px;
+} */
+.submit-btn button{
+    padding: 6px 8px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    background-color: #004a4d;
+    border: 2px solid #014548;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-family: 'PT Serif', serif;
+}
+
+/* Form CSS end */
+
+
+/* Media Queries for responsiveness */
+/* Extra small devices (phones, 600px and down) */
+@media only screen  and (max-width: 575px) {
+    .input_field .input_box_Registration{
+        width: 60% ;
+    }
+    .input_field .checkbox-area{
+        width: 60% ;
+    }
+
+    .N-label{
+        width: 40%;
+    }
+
+    .mfo-label{
+        font-size: 14px;
+    }
+
+    .S-P-Details{
+        text-align: center;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    .input_field .input_box_Registration{
+        width: 80% ;
+    }
+    .input_field .checkbox-area{
+        width: 80% ;
+    }
+
+    .N-label{
+        width: 20%;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .input_field .input_box_Registration{
+        width: 65% ;
+    }
+    .input_field .checkbox-area{
+        width: 65% ;
+    }
+    .N-label{
+        width: 20%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+}

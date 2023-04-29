@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/media/ned-connect-favicon-dark.png">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/CSS Files/form.css">
+
+
+    <!-- Bootstrap 5 CSS file -->
+    <link rel="stylesheet" href="/supporting-files/bootstrap.min.css">
+
+    <!-- Bootstrap 5 JS file -->
+    <script defer src="/supporting-files/bootstrap.bundle.min.js"></script>
+
+    <!-- Font Awesome all.css (For Icons) -->
+    <link rel="stylesheet" type="text/css" href="/supporting-files/all.min.css">
+    <!-- It only works when their is a folder 'webfonts' in the same directory -->
+
+</head>
+
+<body>
+
+    <!-- <iframe src="/HTML Files/header.html" width="100%" height="150px"></iframe> -->
+
+
+    <div class="container-md px-md-0 px-sm-4 px-3">
+        <div class="row R-Form-Heading backgroundDarkSea my-3">
+            <h1 class="colorWhite py-1">Registration Form</h1>
+        </div>
+        <div class="R-Form">
+
+            <form action="">
+
+                <div class="row m-3">
+                    <a class="S-P-Details white_background link" data-bs-toggle="collapse" href="#collapseExample1"
+                        role="button" aria-expanded="false" aria-controls="collapseExample1">
+                        <i class="fa-solid fa-circle-down icon"></i>
+                        Student Personal Details
+                    </a>
+                    <div class="collapse S-P-Details-DD white_background" id="collapseExample1">
+                        <div class="py-3">
+                            <div class="widthhundred d-flex input_field py-2">
+                                <div class="N-label align-self-center px-sm-3 px-1">
+                                    <label for="profile">Profile Picture</label>
+                                </div>
+                                <div class="input_box_Registration-PP profile-badge">
+                                    <!-- <img src="https://dummyimage.com/600x400/000/"> -->
+
+                                    <div class="profile-pic">
+
+                                        <img alt="User Pic"
+                                            src="https://d30y9cdsu7xlg0.cloudfront.net/png/138926-200.png"
+                                            id="profile-image1" height="200">
+                                        <input id="profile-image-upload" class="hidden pt-3" type="file"
+                                            onchange="previewFile()">
+                                        <div style="color:#999;"> </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widthhundred d-flex input_field py-2">
+                                <div class="N-label align-self-center px-sm-3 px-1">
+                                    <label for="fname">First Name</label>
+                                </div>
+                                <div class="input_box_Registration">
+                                    <input type="text" placeholder="" required>
+                                    <label class="input-label-registration" for="fname">First Name</label>
+                                </div>
+                            </div>
+                            <div class="widthhundred d-flex input_field py-2">
+                                <div class="N-label align-self-center px-sm-3 px-1">
+                                    <label for="lname">Last Name</label>
+                                </div>
+                                <div class="input_box_Registration">
+                                    <input type="text" placeholder="" required>
+                                    <label class="input-label-registration" for="lname">Last Name</label>
+                                </div>
+                            </div>
+                            <div class="widthhundred d-flex input_field py-2">
+                                <div class="N-label align-self-center px-sm-3 px-1">
+                                    <label for="name">Sex</label>
+                                </div>
+                                <div class="input_box_Registration">
+                                    <div class="Radio_Gender">
+                                        <div class="radio_container">
+                                            <input class="mfo-input" type="radio" name="radio" id="male">
+                                            <label class="mfo-label" for="male">Male</label>
+                                            <input class="mfo-input" type="radio" name="radio" id="female">
+                                            <label class="mfo-label" for="female">Female</label>
+                                            <input class="mfo-input" type="radio" name="radio" id="other">
+                                            <label class="mfo-label" for="other">Other</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widthhundred d-flex input_field py-2">
+                                <div class="N-label align-self-center px-sm-3 px-1">
+                                    <label for="dob">Birth Date</label>
+                                </div>
+                                <div>
+                                    <div class="dob-field">
+                                        <input autocomplete="off" class="text" name="dateofbirth" type="date"
+                                            min="1931-01-01" spellcheck="false">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widthhundred d-flex input_field py-2">
+                                <div class="N-label align-self-center px-sm-3 px-1">
+                                    <label for="cnic">CNIC No.</label>
+                                </div>
+                                <div class="input_box_Registration">
+                                    <input type="text" id="cnic" name="cnic" placeholder="" required>
+                                    <label class="input-label-registration" for="cnic">CNIC</label>
+                                </div>
+                            </div>
+                            <div class="widthhundred d-flex input_field py-2">
+                                <div class="N-label align-self-center px-sm-3 px-1">
+                                    <label for="Contact">Contact No.</label>
+                                </div>
+                                <div class="input_box_Registration">
+                                    <input type="tel" id="phone" name="phone" placeholder="" required>
+                                    <label class="input-label-registration" for="Contact">Contact</label>
+                                </div>
+                            </div>
+                            <div class="widthhundred d-flex input_field py-2">
+                                <div class="N-label align-self-center px-sm-3 px-1">
+                                    <label for="Whatsapp">Whatsapp No.</label>
+                                </div>
+                                <div class="input_box_Registration">
+                                    <input type="tel" id="Wphone" name="Wphone" placeholder="" required>
+                                    <label class="input-label-registration" for="Whatsapp">Whatsapp</label>
+                                </div>
+                            </div>
+                            <div class="widthhundred d-flex input_field py-2">
+                                <div class="N-label align-self-center px-sm-3 px-1">
+                                    <label for="email">Email Address</label>
+                                </div>
+                                <div class="input_box_Registration">
+                                    <input type="email" id="email" name="email" placeholder="" required>
+                                    <label class="input-label-registration" for="email">Email</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row m-3">
+                    <a class="S-P-Details white_background link" data-bs-toggle="collapse" href="#collapseExample2"
+                        role="button" aria-expanded="false" aria-controls="collapseExample2">
+                        <i class="fa-solid fa-circle-down icon"></i>
+                        Student Address Details
+                    </a>
+                    <div class="collapse S-P-Details-DD white_background" id="collapseExample2">
+                        <div class="py-3">
+
+                            <div class="widthhundred d-flex input_field py-2">
+                                <div class="N-label align-self-center px-sm-3 px-1">
+                                    <label for="address">Home Address</label>
+                                </div>
+                                <div class="input_box_Registration">
+                                    <input type="text" placeholder="" required>
+                                    <label class="input-label-registration" for="address">Home Address</label>
+                                </div>
+                            </div>
+                            <div class="widthhundred d-flex input_field py-2">
+                                <div class="N-label align-self-center px-sm-3 px-1">
+                                    <label for="area">Area</label>
+                                </div>
+                                <div class="input_box_Registration">
+                                    <input type="text" placeholder="" required>
+                                    <label class="input-label-registration" for="area">Area</label>
+                                </div>
+                            </div>
+                            <div class="widthhundred d-flex input_field py-2">
+                                <div class="N-label align-self-center px-sm-3 px-1">
+                                    <label for="city">City</label>
+                                </div>
+                                <div class="input_box_Registration">
+                                    <input type="text" placeholder="" required>
+                                    <label class="input-label-registration" for="city">City</label>
+                                </div>
+                            </div>
+                            <div class="widthhundred d-flex input_field py-2">
+                                <div class="N-label align-self-center px-sm-3 px-1">
+                                    <label for="state">Province or State</label>
+                                </div>
+                                <div class="input_box_Registration">
+                                    <input type="text" placeholder="" required>
+                                    <label class="input-label-registration" for="state">State</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row m-3">
+                    <a class="S-P-Details white_background link" data-bs-toggle="collapse" href="#collapseExample3"
+                        role="button" aria-expanded="false" aria-controls="collapseExample3">
+                        <i class="fa-solid fa-circle-down icon"></i>
+                        Student Academic Details
+                    </a>
+                    <div class="collapse S-P-Details-DD white_background" id="collapseExample3">
+                        <div class="py-3">
+
+                            <div class="widthhundred d-flex input_field py-2">
+                                <div class="N-label align-self-center px-sm-3 px-1">
+                                    <label for="linkdin">University</label>
+                                </div>
+                                <div class="input_box_Registration">
+                                    <input type="text" placeholder=""
+                                        value="NED University of Engineering and Technology" disabled>
+                                    <!-- <label class="input-label-registration" for="linkdin">LinkdIn link</label> -->
+                                </div>
+                            </div>
+                            <div class="widthhundred d-flex input_field py-2">
+                                <div class="N-label align-self-center px-sm-3 px-1">
+                                    <label for="department">Department</label>
+                                </div>
+                                <div class="input_box_Registration">
+                                    <select class="widthhundred dep-select" id="departments" name="departments">
+                                        <option class="dep-option" value="none">Select Department</option>
+                                        <option class="dep-option" value="bcit">Computer Science & Information
+                                            Technology</option>
+                                        <option class="dep-option" value="se">Software Engineering</option>
+                                        <option class="dep-option" value="cis">Computer & Information System
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="widthhundred d-flex input_field py-2">
+                                <div class="N-label align-self-center px-sm-3 px-1">
+                                    <label for="enrol">Enrollment No.</label>
+                                </div>
+                                <div class="input_box_Registration">
+                                    <input type="text" placeholder="" required>
+                                    <label class="input-label-registration" for="enrol">Enrollment</label>
+                                </div>
+                            </div>
+                            <div class="widthhundred d-flex input_field py-2">
+                                <div class="N-label align-self-center px-sm-3 px-1">
+                                    <label for="rollno">Roll No.</label>
+                                </div>
+                                <div class="input_box_Registration">
+                                    <input type="text" placeholder="" required>
+                                    <label class="input-label-registration" for="rollno">Roll No.</label>
+                                </div>
+                            </div>
+                            <div class="widthhundred d-flex input_field py-2">
+                                <div class="N-label align-self-center px-sm-3 px-1">
+                                    <label for="batch">Batch of</label>
+                                </div>
+                                <div class="input_box_Registration">
+                                    <input type="text" placeholder="" required>
+                                    <label class="input-label-registration" for="batch">Batch of</label>
+                                </div>
+                            </div>
+                            <div class="widthhundred d-flex input_field py-2">
+                                <div class="N-label align-self-center px-sm-3 px-1">
+                                    <label for="currentYear">Academic year</label>
+                                </div>
+                                <div class="input_box_Registration">
+                                    <input type="text" placeholder="" required>
+                                    <label class="input-label-registration" for="currentYear">Academic year</label>
+                                </div>
+                            </div>
+                            <div class="widthhundred d-flex input_field py-2">
+                                <div class="N-label align-self-center px-sm-3 px-1">
+                                    <label for="sem">Semester</label>
+                                </div>
+                                <div class="input_box_Registration">
+                                    <input type="text" placeholder="" required>
+                                    <label class="input-label-registration" for="sem">Semester</label>
+                                </div>
+                            </div>
+                            <div class="widthhundred d-flex input_field py-2">
+                                <div class="N-label align-self-center px-sm-3 px-1">
+                                    <label for="linkdin">LinkdIn Profile</label>
+                                </div>
+                                <div class="input_box_Registration">
+                                    <input type="text" placeholder="" required>
+                                    <label class="input-label-registration" for="linkdin">LinkdIn link</label>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row m-3">
+                    <a class="S-P-Details white_background link" data-bs-toggle="collapse" href="#collapseExample4"
+                        role="button" aria-expanded="false" aria-controls="collapseExample4">
+                        <i class="fa-solid fa-circle-down icon"></i>
+                        Student Skillset Details
+                    </a>
+                    <div class="collapse S-P-Details-DD white_background" id="collapseExample4">
+                        <div class="py-3">
+
+                            <div class="widthhundred d-flex input_field py-2">
+                                <div class="N-label align-self-center px-sm-3 px-1">
+                                    <label for="Skillset">Skills</label>
+                                </div>
+                                <div class="checkbox-area d-flex flex-column flex-md-row">
+                                    <div class="skillset_checkboxes me-lg-4 me-3">
+                                        <div class="my-1">
+                                            <label>
+                                                <input type="checkbox" name="skillset" value="web development">
+                                                Web Development
+                                            </label>
+                                        </div>
+                                        <div class="my-1">
+                                            <label>
+                                                <input type="checkbox" name="skillset" value="web development">
+                                                Artificial Intelligence
+                                            </label>
+                                        </div>
+                                        <div class="my-1">
+                                            <label>
+                                                <input type="checkbox" name="skillset" value="web development">
+                                                Software Development
+                                            </label>
+                                        </div>
+                                        <div class="my-1">
+                                            <label>
+                                                <input type="checkbox" name="skillset" value="web development">
+                                                Game Development
+                                            </label>
+                                        </div>
+                                        <div class="my-1">
+                                            <label>
+                                                <input type="checkbox" name="skillset" value="web development">
+                                                Networking
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="skillset_checkboxes mx-lg-4 mx-md-3 me-3">
+                                        <div class="my-1">
+                                            <label>
+                                                <input type="checkbox" name="skillset" value="web development">
+                                                Software Testing
+                                            </label>
+                                        </div>
+                                        <div class="my-1">
+                                            <label>
+                                                <input type="checkbox" name="skillset" value="web development">
+                                                UI/UX
+                                            </label>
+                                        </div>
+                                        <div class="my-1">
+                                            <label>
+                                                <input type="checkbox" name="skillset" value="web development">
+                                                Data Science
+                                            </label>
+                                        </div>
+                                        <div class="my-1">
+                                            <label>
+                                                <input type="checkbox" name="skillset" value="web development">
+                                                App Development
+                                            </label>
+                                        </div>
+                                        <div class="my-1">
+                                            <label>
+                                                <input type="checkbox" name="skillset" value="web development">
+                                                Project Manager
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widthhundred d-flex input_field py-2">
+                                <div class="N-label align-self-center px-sm-3 px-1">
+                                    <label for="enrol">Other Skills</label>
+                                </div>
+                                <!-- <div class="col-12 input_box">
+                                    <textarea name="message" rows="10" cols="30"></textarea>
+                                    <label class="textarea-label" for="message">Message</label>
+                                </div> -->
+                                <div class="input_box_Registration">
+                                    <textarea id="other-skills" name="other-skills" rows="3" placeholder=""></textarea>
+                                    <label class="input-label-registration textarea-label" for="O-skills">Other
+                                        Skills</label>
+                                </div>
+                            </div>
+                            <div class="widthhundred d-flex input_field py-2">
+                                <div class="N-label align-self-center px-sm-3 px-1">
+                                    <label for="resume">Resume/CV</label>
+                                </div>
+                                <div class="file-upload">
+                                    <input class="file-upload__input my-2" type="file" name="resume" id="myFile">
+                                    <button class="file-upload__button my-2" type="button">Choose File</button>
+                                    <span class="file-upload__label my-2"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="m-3">
+                    <div class="d-flex justify-content-end submit-btn">
+                        <button type="submit" class="">Confirm Registration</button>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- <iframe src="/HTML Files/footer.html" width="100%" height="750px"></iframe> -->
+
+    <!-- For Resume or CV input -->
+    <script>
+        Array.prototype.forEach.call(
+            document.querySelectorAll(" .file-upload__button"), function (button) {
+                const
+                    hiddenInput = button.parentElement.querySelector(".file-upload__input"); const
+                        label = button.parentElement.querySelector(".file-upload__label"); const
+                            defaultLabelText = "No file(s) selected"; // Set default text for label label.textContent=defaultLabelText;
+                label.title = defaultLabelText; button.addEventListener("click", function () { hiddenInput.click(); });
+                hiddenInput.addEventListener("change", function () {
+                    const
+                        filenameList = Array.prototype.map.call(hiddenInput.files, function (file) { return file.name; });
+                    label.textContent = filenameList.join(", ") || defaultLabelText;
+                    label.title = label.textContent;
+                });
+            }
+        );
+    </script>
+
+
+    <!-- For Profile Files input -->
+    <script>
+        function previewFile() {
+            var preview = document.querySelector('img');
+            var file = document.querySelector('input[type=file]').files[0];
+            var reader = new FileReader();
+
+            reader.addEventListener("load", function () { preview.src = reader.result; }, false); if (file) {
+                reader.readAsDataURL(file);
+            }
+        } $(function () {
+            $('#profile-image1').on('click', function () {
+                $('#profile-image-upload').click();
+            });
+        }); 
+    </script>
+
+    <!--  -->
+    <script>
+        // JavaScript code to invert the chevron icons
+        const links = document.querySelectorAll('.link');
+
+        links.forEach(function (link) {
+            const icon = link.querySelector('.icon');
+
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+                if (icon.style.transform === '') {
+                    icon.style.transform = 'rotate(180deg)';
+                } else {
+                    icon.style.transform = '';
+                }
+
+
+                // toggle color
+                icon.classList.toggle('color');
+                link.classList.toggle('color');
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>

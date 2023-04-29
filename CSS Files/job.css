@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.widthhundred{
+    width: 100%;
+}
+
+.heighthundred{
+    height: 100%;
+}
+
+.backgroundLightGreen{
+    background-color: #94bb44;
+}
+
+.colorWhite{
+    color: white;
+}
+
+.backgroundDarkSea{
+    background-color: #004a4d;
+}
+
+
+/* Media Queries for responsiveness */
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen  and (max-width: 575px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+}

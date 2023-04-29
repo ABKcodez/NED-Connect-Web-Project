@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/media/ned-connect-favicon-dark.png">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/CSS Files/job.css">
+
+
+
+
+    <link rel="stylesheet" href="/CSS Files/header.css">
+
+    <link rel="stylesheet" href="/CSS Files/modalLogin.css">
+    <link rel="stylesheet" href="/CSS Files/modalRegistration.css">
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+    <link rel="stylesheet" href="/CSS Files/footer.css">
+
+
+
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/css/price_rangs.css">
+    <link rel="stylesheet" href="/assets/css/flaticon.css">
+    <link rel="stylesheet" href="/assets/css/slicknav.css">
+    <link rel="stylesheet" href="/assets/css/animate.min.css">
+    <link rel="stylesheet" href="/assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/assets/css/themify-icons.css">
+    <link rel="stylesheet" href="/assets/css/slick.css">
+    <link rel="stylesheet" href="/assets/css/nice-select.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico"> -->
+
+
+
+    <!-- Bootstrap 5 CSS file -->
+    <link rel="stylesheet" href="/supporting-files/bootstrap.min.css">
+
+    <!-- Bootstrap 5 JS file -->
+    <script defer src="/supporting-files/bootstrap.bundle.min.js"></script>
+
+    <!-- Font Awesome all.css (For Icons) -->
+    <link rel="stylesheet" type="text/css" href="/supporting-files/all.min.css">
+    <!-- It only works when their is a folder 'webfonts' in the same directory -->
+
+</head>
+
+<body>
+    <header>
+        <!-- Header lite-->
+        <nav>
+            <div class="container-fluid navlite">
+                <div class="px-0 container d-flex flex-row justify-content-center justify-content-sm-end">
+                    <div class="border-0 rounded navliteItem">
+                        <a href="">
+                            <div class="fs-6">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="border-0 rounded navliteItem">
+                        <a href="">
+                            <div class="fs-6">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="border-0 rounded navliteItem">
+                        <a href="">
+                            <div class="fs-6 navliteFBicon">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="border-0 rounded navliteItem">
+                        <a href="">
+                            <div class="fs-6">
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <nav>
+            <div class="mainNavbar">
+                <div class="container px-lg-0">
+                    <div class="d-flex justify-content-between widthhundred">
+                        <div class="mainlogo">
+                            <a href="#">
+                                <img class="img-fluid" src="/media/ned-connect-logoLight.svg" alt="Mainlogo">
+                            </a>
+                        </div>
+                        <div id="menu" class="d-block d-xl-none d-lg-none my-auto" onclick="onClickMenu()">
+                            <div class="bar" id="bar1"></div>
+                            <div class="bar" id="bar2"></div>
+                            <div class="bar" id="bar3"></div>
+                        </div>
+                        <!-- d-lg-block -->
+                        <div class="my-auto d-none d-lg-block">
+                            <div class="d-flex">
+                                <div class="navLinksName1">
+                                    <a href="/HTML Files/index.html">Home</a>
+                                </div>
+                                <div class="navLinksName1">
+                                    <a href="#">News</a>
+                                </div>
+                                <div class="navLinksName1 homePage">
+                                    <a href="#">Jobs</a>
+                                </div>
+                                <div class="navLinksName1">
+                                    <a href="#">Events</a>
+                                </div>
+                                <div class="navLinksName1">
+                                    <a href="#">Achievements</a>
+                                </div>
+                                <div class="navLinksName1">
+                                    <a href="#">Industries</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-auto d-none d-lg-block">
+                            <div class="d-flex">
+                                <div class="loginLink1 main_btn">
+                                    <a href="#">Log in</a>
+                                </div>
+                                <div class="navLinksName1 registerButton1 main_btn2">
+                                    <a href="#" class="">Register</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="mydd" id="myDropdown">
+                <div class="container dd-shadow">
+                    <div class="dd-height d-flex flex-column justify-content-between">
+                        <div class="d-flex flex-column">
+                            <div class="dd-links">
+                                <a href="#">
+                                    <div class="navLinksName2">
+                                        News
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dd-links">
+                                <a href="#">
+                                    <div class="navLinksName2">
+                                        Jobs
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dd-links">
+                                <a href="#">
+                                    <div class="navLinksName2">
+                                        Events
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dd-links">
+                                <a href="#">
+                                    <div class="navLinksName2">
+                                        Achievements
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dd-links">
+                                <a href="#">
+                                    <div class="navLinksName2">
+                                        Industries
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dd-links">
+                                <a href="#">
+                                    <div class="navLinksName2 border-0">
+                                        Industries
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column m-3">
+                            <div class="dd-buttons">
+                                <a href="#">
+                                    <div class="registerButton2 main_btn3" onclick="onClickMenu()">
+                                        Register
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dd-buttons main_btn1" onclick="onClickMenu()">
+                                <a href="#">
+                                    <div class="loginButton2">
+                                        Log in
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <main>
+        <!-- Hero Area Start-->
+        <div class="slider-area ">
+            <div class="single-slider section-overly slider-height2 d-flex align-items-center"
+                data-background="/assets/img/hero/job-hero.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hero-cap text-center">
+                                <h2>Get your job</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero Area End -->
+
+        <!-- job post company Start -->
+        <div class="job-post-company pt-120 pb-120">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <!-- Left Content -->
+                    <div class="col-xl-7 col-lg-8">
+                        <!-- job single -->
+                        <div class="single-job-items mb-50">
+                            <div class="job-items">
+                                <div class="company-img company-img-details">
+                                    <a href="#"><img src="/assets/img/icon/job-list1.png" alt=""></a>
+                                </div>
+                                <div class="job-tittle">
+                                    <a href="#">
+                                        <h4>Systems Limited</h4>
+                                    </a>
+                                    <ul>
+                                        <li>Software Agency</li>
+                                        <li><i class="fas fa-map-marker-alt"></i>Karachi, Pak.</li>
+                                        <li>Rs100,000 - Rs.120,000</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- job single End -->
+
+                        <div class="job-post-details">
+                            <div class="post-details1 mb-50">
+                                <!-- Small Section Tittle -->
+                                <div class="small-section-tittle">
+                                    <h4>Job Description</h4>
+                                </div>
+                                <p>It is a long established fact that a reader will beff distracted by vbthe creadable
+                                    content
+                                    of a page when looking at its layout. The pointf of using Lorem Ipsum is that it has
+                                    ahf
+                                    mcore or-lgess normal distribution of letters, as opposed to using, Content here
+                                    content
+                                    here making it look like readable.</p>
+                            </div>
+                            <div class="post-details2  mb-50">
+                                <!-- Small Section Tittle -->
+                                <div class="small-section-tittle">
+                                    <h4>Required Knowledge, Skills, and Abilities</h4>
+                                </div>
+                                <ul>
+                                    <li>System Software Development</li>
+                                    <li>Mobile Applicationin iOS/Android/Tizen or other platform</li>
+                                    <li>Research and code , libraries, APIs and frameworks</li>
+                                    <li>Strong knowledge on software development life cycle</li>
+                                    <li>Strong problem solving and debugging skills</li>
+                                </ul>
+                            </div>
+                            <div class="post-details2  mb-50">
+                                <!-- Small Section Tittle -->
+                                <div class="small-section-tittle">
+                                    <h4>Education + Experience</h4>
+                                </div>
+                                <ul>
+                                    <li>3 or more years of professional design experience</li>
+                                    <li>Direct response email experience</li>
+                                    <li>Ecommerce website design experience</li>
+                                    <li>Familiarity with mobile and web apps preferred</li>
+                                    <li>Experience using Invision a plus</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Right Content -->
+                    <div class="col-xl-4 col-lg-4">
+                        <div class="post-details3  mb-50">
+                            <!-- Small Section Tittle -->
+                            <div class="small-section-tittle">
+                                <h4>Job Overview</h4>
+                            </div>
+                            <ul>
+                                <li>Posted date : <span>12 Apr 2023</span></li>
+                                <li>Location : <span>Karachi</span></li>
+                                <li>Vacancy : <span>02</span></li>
+                                <li>Job nature : <span>Full time</span></li>
+                                <li>Salary : <span>Rs. 100,000 monthly</span></li>
+                                <li>Application date : <span>30 Apr 2023</span></li>
+                            </ul>
+                            <div class="apply-btn2">
+                                <a href="#" class=" apply-btn">Apply Now</a>
+                            </div>
+                        </div>
+                        <div class="post-details4  mb-50">
+                            <!-- Small Section Tittle -->
+                            <div class="small-section-tittle">
+                                <h4>Company Information</h4>
+                            </div>
+                            <span>Systems Ltd.</span>
+                            <p>The country's first Information Technology company that provides business solutions,
+                                Business Process Outsourcing
+                                services, and is the largest software exporter in Pakistan.</p>
+                            <ul class="p-0">
+                                <li>Name: <span>Systems </span></li>
+                                <li>Web : <span> systems.com</span></li>
+                                <li>Email: <span>systems.software@gmail.com</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- job post company End -->
+
+
+    </main>
+
+
+
+
+
+    <footer>
+        <div class="container-fluid backgroundLightGreen">
+
+            <div class="container colorWhite d-none d-lg-block">
+                <div class="d-flex widthhundred justify-content-between">
+
+                    <div class="d-flex flex-row py-3">
+                        <div class="fontFooterliteIcon align-self-center pe-3">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <div class="d-flex flex-column fontFooterliteText">
+                            <div>
+                                Contact Us
+                            </div>
+                            <div class="fw-bold">
+                                (+880) 184-480-8316
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footerLogo d-flex flex-wrap justify-content-center py-3">
+                        <div class="align-self-center">
+                            <img class="img-fluid" src="/media/ned-connect-logoDark.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-end py-3">
+                        <div class="d-flex flex-column  fontFooterliteText">
+                            <div>
+                                Mail to
+                            </div>
+                            <div class="fw-bold">
+                                Name.info@email.com
+                            </div>
+                        </div>
+                        <div class="fontFooterliteIcon align-self-center ps-3">
+                            <i class="fa-solid fa-envelope-circle-check"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="container colorWhite d-lg-none">
+                <div class="d-flex flex-column widthhundred justify-content-between">
+
+                    <div class="footerLogo d-flex flex-wrap justify-content-center py-3">
+                        <div class="align-self-center">
+                            <img class="img-fluid" src="/media/ned-connect-logoDark.svg" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class="d-none d-sm-block">
+                        <div class="d-flex justify-content-between pb-3">
+
+                            <div class="d-flex">
+                                <div class="fontFooterliteIcon align-self-center pe-3">
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                </div>
+                                <div class="d-flex flex-column fontFooterliteText">
+                                    <div class="ms-auto">
+                                        Contact Us
+                                    </div>
+                                    <div class="fw-bold">
+                                        (+880) 184-480-8316
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex">
+                                <div class="d-flex flex-column  fontFooterliteText">
+                                    <div>
+                                        Mail to
+                                    </div>
+                                    <div class="fw-bold">
+                                        Name.info@email.com
+                                    </div>
+                                </div>
+                                <div class="fontFooterliteIcon align-self-center ps-3">
+                                    <i class="fa-solid fa-envelope-circle-check"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="container-fluid backgroundDarkSea p-0">
+            <div class="container colorWhite p-lg-5 p-md-4 p-3">
+
+                <div class="d-flex flex-column flex-lg-row justify-content-between">
+
+                    <div class="d-flex flex-column flex-md-row flex-box">
+                        <div class="d-flex flex-column p-3 flex-box fontInFooter">
+                            <div class="my-3 fs-sm-4 fs-5 fw-bold text-decoration-underline">
+                                <h4>About NED Connect</h4>
+                            </div>
+                            <div class="my-3 ">
+                                Empowering students to thrive in the workforce. We provide resources and connections for
+                                students to gain hands-on experience and launch their careers.
+                            </div>
+                            <div class="d-flex fs-4 mt-3">
+                                <div class="footerAboutIcons fbfootericon me-3">
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </div>
+                                <div class="footerAboutIcons me-3">
+                                    <a href="#">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </div>
+                                <div class="footerAboutIcons me-3">
+                                    <a href="#">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </div>
+                                <div class="footerAboutIcons">
+                                    <a href="#">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column p-3 flex-box fontInFooter">
+                            <div class="my-3 fs-sm-4 fs-5 fw-bold text-decoration-underline">
+                                <h4>Contacts</h4>
+                            </div>
+                            <div class="d-flex flex-column mt-3">
+                                <div>
+                                    <Address class="d-flex footerContactItems">
+                                        <div class="pe-2 fs-5">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                        </div>
+                                        <div class="FooterContactContent">
+                                            NED University of Engineering & Technology University Road, Karachi - 75270,
+                                            Pakistan.
+                                        </div>
+                                    </Address>
+                                </div>
+                                <div class="d-flex flex-row footerContactItems">
+                                    <div class="pe-2 fs-5 ">
+                                        <i class="fa-regular fa-envelope"></i>
+                                    </div>
+                                    <div class="footerStudentLinks FooterContactContent">
+                                        <a href="#">registrar@neduet.edu.pk</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row footerContactItems">
+                                    <div class="pe-2 fs-5 ">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    <div class="FooterContactContent">
+                                        (92-21) 99261261-8
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row footerContactItems">
+                                    <div class="pe-2 fs-5 ">
+                                        <i class="fa-solid fa-fax"></i>
+                                    </div>
+                                    <div class="FooterContactContent">
+                                        (92-21) 99261255
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row flex-box">
+                        <div class="d-flex flex-column p-3 flex-box fontInFooter">
+                            <div class="my-3 fs-sm-4 fs-5 fw-bold text-decoration-underline">
+                                <h4>Students</h4>
+                            </div>
+                            <div class="d-flex flex-column footerStudentLinks mt-3">
+                                <div>
+                                    <a href="#">Interships</a>
+                                </div>
+                                <div>
+                                    <a href="#">Jobs</a>
+                                </div>
+                                <div>
+                                    <a href="#">Student Affairs</a>
+                                </div>
+                                <div>
+                                    <a href="#">Student Job Portal</a>
+                                </div>
+                                <div>
+                                    <a href="#">Skills Training</a>
+                                </div>
+                                <div>
+                                    <a href="#">Interview Preparation</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column p-3 pe-0 flex-box fontInFooter">
+                            <div class="my-3 fs-sm-4 fs-5 fw-bold text-decoration-underline">
+                                <h4>Industrials</h4>
+                            </div>
+                            <div class="d-flex flex-column footerStudentLinks mt-3">
+                                <div>
+                                    <a href="#">Research & Development</a>
+                                </div>
+                                <div>
+                                    <a href="#">Industry Events</a>
+                                </div>
+                                <div>
+                                    <a href="#">Job Postings</a>
+                                </div>
+                                <div>
+                                    <a href="#">Talent Acquisition</a>
+                                </div>
+                                <div>
+                                    <a href="#">Consultancy Services</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="my-3 footerSeperation"></div>
+
+            <div class="container">
+                <div class="d-flex justify-content-center pb-5 pt-4">
+                    <div class="text-center colorWhite">
+                        <span><i class="fa-solid fa-copyright" style="color: #94bb44;"></i></span>
+                        <span class="copyRightText">2023 All Copy Rights reserved by</span>
+                        <span class="BottomNEDHeading">NED University</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <!-- JS here -->
+
+    <!-- All JS Custom Plugins Link Here here -->
+    <script src="/assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="/assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="/assets/js/popper.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="/assets/js/jquery.slicknav.min.js"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Range -->
+    <script src="/assets/js/owl.carousel.min.js"></script>
+    <script src="/assets/js/slick.min.js"></script>
+    <script src="/assets/js/price_rangs.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="/assets/js/wow.min.js"></script>
+    <script src="/assets/js/animated.headline.js"></script>
+    <script src="/assets/js/jquery.magnific-popup.js"></script>
+
+    <!-- Scrollup, nice-select, sticky -->
+    <script src="/assets/js/jquery.scrollUp.min.js"></script>
+    <script src="/assets/js/jquery.nice-select.min.js"></script>
+    <script src="/assets/js/jquery.sticky.js"></script>
+
+    <!-- contact js -->
+    <script src="/assets/js/contact.js"></script>
+    <script src="/assets/js/jquery.form.js"></script>
+    <script src="/assets/js/jquery.validate.min.js"></script>
+    <script src="/assets/js/mail-script.js"></script>
+    <script src="/assets/js/jquery.ajaxchimp.min.js"></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="/assets/js/plugins.js"></script>
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

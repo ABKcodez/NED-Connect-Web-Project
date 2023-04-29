@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NED Connect</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/media/ned-connect-favicon-circle-background.png">
+
+
+
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/css/price_rangs.css">
+    <link rel="stylesheet" href="/assets/css/flaticon.css">
+    <link rel="stylesheet" href="/assets/css/slicknav.css">
+    <link rel="stylesheet" href="/assets/css/animate.min.css">
+    <link rel="stylesheet" href="/assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/assets/css/themify-icons.css">
+    <link rel="stylesheet" href="/assets/css/slick.css">
+    <link rel="stylesheet" href="/assets/css/nice-select.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/CSS Files/style.css">
+
+
+
+    <link rel="stylesheet" href="/CSS Files/modalLogin.css">
+    <link rel="stylesheet" href="/CSS Files/modalRegistration.css">
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+
+    <!-- Bootstrap 5 CSS file -->
+    <link rel="stylesheet" href="/supporting-files/bootstrap.min.css">
+
+    <!-- Bootstrap 5 JS file -->
+    <script defer src="/supporting-files/bootstrap.bundle.min.js"></script>
+
+    <!-- Font Awesome all.css (For Icons) -->
+    <link rel="stylesheet" type="text/css" href="/supporting-files/all.min.css">
+    <!-- It only works when their is a folder 'webfonts' in the same directory -->
+
+</head>
+
+<body>
+
+    <!-- Header lite-->
+    <nav>
+        <div class="container-fluid navlite">
+            <div class="px-0 container d-flex flex-row justify-content-center justify-content-sm-end">
+                <div class="border-0 rounded navliteItem">
+                    <a href="">
+                        <div class="fs-6">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="border-0 rounded navliteItem">
+                    <a href="">
+                        <div class="fs-6">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="border-0 rounded navliteItem">
+                    <a href="">
+                        <div class="fs-6 navliteFBicon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="border-0 rounded navliteItem">
+                    <a href="">
+                        <div class="fs-6">
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="heroImg">
+        <!-- Header -->
+        <nav>
+            <div class="mainNavbar">
+                <div class="container px-lg-0">
+                    <div class="d-flex justify-content-between widthhundred">
+                        <div class="mainlogo">
+                            <a href="#">
+                                <img class="img-fluid" src="/media/ned-connect-logoLight.svg" alt="Mainlogo">
+                            </a>
+                        </div>
+                        <div id="menu" class="d-block d-xl-none d-lg-none my-auto" onclick="onClickMenu()">
+                            <div class="bar" id="bar1"></div>
+                            <div class="bar" id="bar2"></div>
+                            <div class="bar" id="bar3"></div>
+                        </div>
+                        <!-- d-lg-block -->
+                        <div class="my-auto d-none d-lg-block">
+                            <div class="d-flex">
+                                <div class="navLinksName1 homePage">
+                                    <a href="/HTML Files/index.html">Home</a>
+                                </div>
+                                <div class="navLinksName1">
+                                    <a href="#">News</a>
+                                </div>
+                                <div class="navLinksName1">
+                                    <a href="/HTML Files/job.html">Jobs</a>
+                                </div>
+                                <div class="navLinksName1">
+                                    <a href="#">Events</a>
+                                </div>
+                                <div class="navLinksName1">
+                                    <a href="#">Achievements</a>
+                                </div>
+                                <div class="navLinksName1">
+                                    <a href="#">Industries</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-auto d-none d-lg-block">
+                            <div class="d-flex">
+                                <div class="loginLink1 main_btn">
+                                    <a href="#">Log in</a>
+                                </div>
+                                <div class="navLinksName1 registerButton1 main_btn2">
+                                    <a href="#" class="">Register</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="mydd" id="myDropdown">
+                <div class="container dd-shadow">
+                    <div class="dd-height d-flex flex-column justify-content-between">
+                        <div class="d-flex flex-column">
+                            <div class="dd-links">
+                                <a href="#">
+                                    <div class="navLinksName2">
+                                        News
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dd-links">
+                                <a href="#">
+                                    <div class="navLinksName2">
+                                        Jobs
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dd-links">
+                                <a href="#">
+                                    <div class="navLinksName2">
+                                        Events
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dd-links">
+                                <a href="#">
+                                    <div class="navLinksName2">
+                                        Achievements
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dd-links">
+                                <a href="#">
+                                    <div class="navLinksName2">
+                                        Industries
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dd-links">
+                                <a href="#">
+                                    <div class="navLinksName2 border-0">
+                                        Industries
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column m-3">
+                            <div class="dd-buttons main_btn3" onclick="onClickMenu()">
+                                <a href="#">
+                                    <div class="registerButton2">
+                                        Register
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dd-buttons main_btn1" onclick="onClickMenu()">
+                                <a href="#">
+                                    <div class="loginButton2">
+                                        Log in
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <!-- Modal LogIn -->
+        <div class="wrapper">
+            <!-- <button class="main_btn create_btn">Log in</button> -->
+
+            <div class="project_wrap">
+                <div class="shadow close_btn"></div>
+                <div class="project">
+                    <div class="header">
+                        <div class="title">Log in</div>
+                        <span class="icon close_btn">
+                            <ion-icon name="close-outline" class="i"></ion-icon>
+                        </span>
+                    </div>
+                    <div class="container">
+                        <div class="body">
+                            <!-- <div class="project_name_wrap">
+                                <p class="label_title">Email</p>
+                                <input type="text" class="input_text" placeholder="Enter your Email address" />
+                            </div> -->
+                            <form action="">
+                                <div class="col-12 input_box">
+                                    <input type="text" placeholder="" required>
+                                    <label class="input-label" for="email">Email</label>
+                                </div>
+                                <div class="col-12 input_box mt-4">
+                                    <input type="text" placeholder="" required>
+                                    <label class="input-label" for="Password">Password</label>
+                                </div>
+                            </form>
+
+                        </div>
+
+                        <div class="footer">
+                            <!-- <div class="FP-link my-auto">
+                            </div> -->
+                            <div class="btn_wrap FP-link">
+                                <a href="#" class="cancel_btn close_btn mx-3">Forget Password</a>
+                                <!-- <button class="cancel_btn close_btn">Cancel</button> -->
+                                <button class="create_btn">Log In</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Modal Register -->
+        <div class="wrapper2">
+            <!-- <button class="main_btn create_btn">Log in</button> -->
+
+            <div class="project_wrap2">
+                <div class="shadow close_btn"></div>
+                <div class="project">
+                    <div class="header">
+                        <div class="title">Registertion</div>
+                        <span class="icon close_btn">
+                            <ion-icon name="close-outline" class="i"></ion-icon>
+                        </span>
+                    </div>
+                    <div class="container">
+                        <div class="body">
+                            <!-- <div class="project_name_wrap">
+                                <p class="label_title">Email</p>
+                                <input type="text" class="input_text" placeholder="Enter your Email address" />
+                            </div> -->
+                            <form action="">
+                                <div class="col-12 input_box">
+                                    <input id="fname" type="text" placeholder="" name="first_name" required>
+                                    <label class="input-label" for="name">First Name</label>
+                                </div>
+                                <div class="col-12 input_box mt-3">
+                                    <input id="lname" type="text" placeholder="" name="last_name" required>
+                                    <label class="input-label" for="name">Last Name</label>
+                                </div>
+                                <div class="col-12 input_box mt-3">
+                                    <input id="contact" type="tel" placeholder="" name="contact" required>
+                                    <label class="input-label" for="email">Contact No.</label>
+                                </div>
+                                <div class="col-12 input_box mt-3">
+                                    <input id="email" type="text" placeholder="" name="email" required>
+                                    <label class="input-label" for="email">Email</label>
+                                </div>
+                                <div class="col-12 input_box mt-3">
+                                    <input id="password" type="password" placeholder="" name="password" required>
+                                    <label class="input-label" for="Password">Password</label>
+                                </div>
+                                <div class="col-12 input_box mt-3">
+                                    <input type="password" placeholder="" required>
+                                    <label class="input-label" for="Password">Confirm Password</label>
+                                </div>
+                                <div class="footer">
+                                    <!-- <div class="FP-link my-auto">
+                                    </div> -->
+                                    <div class="btn_wrap FP-link mt-3">
+                                        <button class="cancel_btn close_btn">Cancel</button>
+                                        <button onclick="registerUser()" class="create_btn">Register</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- Hero Section -->
+        <section>
+            <div class="container ">
+                <div class="d-flex flex-column heroSection justify-content-center">
+                    <div class="SIL-heading d-flex justify-content-center">
+                        <h1>STUDENT INDUSTRY LINKAGE</h1>
+                    </div>
+                    <div class="d-flex flex-row flex-wrap justify-content-center align-item-center">
+                        <div class="heroText px-xl-5 px-lg-4">
+                            Unlock Your Potential With Know Up's Innovative Education.
+                        </div>
+                    </div>
+                    <div class=" d-flex justify-content-center">
+                        <div class="heroButton d-flex justify-content-center">
+                            <a href="/HTML Files/form.html" target="_blank">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+    <!-- How  Apply Process Start-->
+    <div class="apply-process-area apply-bg pt-150 pb-150" data-background="assets/img/gallery/how-applybg.png">
+        <div class="container">
+            <!-- Section Tittle -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-tittle white-text text-center">
+                        <span>Apply process</span>
+                        <h2> How it works</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- Apply Process Caption -->
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-process text-center mb-30">
+                        <div class="process-ion">
+                            <span class="flaticon-search"></span>
+                        </div>
+                        <div class="process-cap">
+                            <h5>1. Search a job</h5>
+                            <p>Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod tempor incididunt ut laborea.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-process text-center mb-30">
+                        <div class="process-ion">
+                            <span class="flaticon-curriculum-vitae"></span>
+                        </div>
+                        <div class="process-cap">
+                            <h5>2. Apply for job</h5>
+                            <p>Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod tempor incididunt ut laborea.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-process text-center mb-30">
+                        <div class="process-ion">
+                            <span class="flaticon-tour"></span>
+                        </div>
+                        <div class="process-cap">
+                            <h5>3. Get your job</h5>
+                            <p>Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod tempor incididunt ut laborea.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- How  Apply Process End-->
+
+
+
+    <!-- Testimonial Start -->
+    <div class="testimonial-area testimonial-padding">
+        <div class="container">
+            <!-- Testimonial contents -->
+            <div class="row d-flex justify-content-center">
+                <div class="col-xl-8 col-lg-8 col-md-10">
+                    <div class="h1-testimonial-active dot-style">
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial text-center">
+                            <!-- Testimonial Content -->
+                            <div class="testimonial-caption ">
+                                <!-- founder -->
+                                <div class="testimonial-founder  ">
+                                    <div class="founder-img mb-30">
+                                        <img src="/assets/img/testmonial/Dr-Mubashir-Khan.jpg" alt="" width="150px"
+                                            style="border-radius: 50%;">
+                                        <span>Dr. Muhammad Mubashir Khan</span>
+                                        <p>Chairman</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-top-cap">
+                                    <p>“Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi reprehenderit
+                                        repellat explicabo in aliquid nemo consequuntur eligendi nesciunt fugit
+                                        voluptatum assumenda ipsam officia.”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial text-center">
+                            <!-- Testimonial Content -->
+                            <div class="testimonial-caption ">
+                                <!-- founder -->
+                                <div class="testimonial-founder  ">
+                                    <div class="founder-img mb-30">
+                                        <img src="/assets/img/testmonial/Faseeh.jpg" alt="" width="150px"
+                                            style="border-radius: 50%;">
+                                        <span>Faseeh Ur Rehman</span>
+                                        <p>Web Developer</p>
+                                    </div>
+                                </div>
+                                <div class=" testimonial-top-cap">
+                                    <p>“Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi reprehenderit
+                                        repellat explicabo in aliquid nemo consequuntur eligendi nesciunt fugit
+                                        voluptatum assumenda ipsam officia”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial text-center">
+                            <!-- Testimonial Content -->
+                            <div class="testimonial-caption ">
+                                <!-- founder -->
+                                <div class="testimonial-founder  ">
+                                    <div class="founder-img mb-30">
+                                        <img src="/assets/img/testmonial/Uzair_Khan.jpg" alt="" width="150px"
+                                            style="border-radius: 50%;">
+                                        <span>Uzair Khan</span>
+                                        <p>AIC Head</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-top-cap">
+                                    <p>“Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi reprehenderit
+                                        repellat explicabo in aliquid nemo consequuntur eligendi nesciunt fugit
+                                        voluptatum assumenda ipsam officia”</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid backgroundLightGreen">
+
+            <div class="container colorWhite d-none d-lg-block">
+                <div class="d-flex widthhundred justify-content-between">
+
+                    <div class="d-flex flex-row py-3">
+                        <div class="fontFooterliteIcon align-self-center pe-3">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <div class="d-flex flex-column fontFooterliteText">
+                            <div>
+                                Contact Us
+                            </div>
+                            <div class="fw-bold">
+                                (+880) 184-480-8316
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footerLogo d-flex flex-wrap justify-content-center py-3">
+                        <div class="align-self-center">
+                            <img class="img-fluid" src="/media/ned-connect-logoDark.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-end py-3">
+                        <div class="d-flex flex-column  fontFooterliteText">
+                            <div>
+                                Mail to
+                            </div>
+                            <div class="fw-bold">
+                                Name.info@email.com
+                            </div>
+                        </div>
+                        <div class="fontFooterliteIcon align-self-center ps-3">
+                            <i class="fa-solid fa-envelope-circle-check"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="container colorWhite d-lg-none">
+                <div class="d-flex flex-column widthhundred justify-content-between">
+
+                    <div class="footerLogo d-flex flex-wrap justify-content-center py-3">
+                        <div class="align-self-center">
+                            <img class="img-fluid" src="/media/ned-connect-logoDark.svg" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class="d-none d-sm-block">
+                        <div class="d-flex justify-content-between pb-3">
+
+                            <div class="d-flex">
+                                <div class="fontFooterliteIcon align-self-center pe-3">
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                </div>
+                                <div class="d-flex flex-column fontFooterliteText">
+                                    <div class="ms-auto">
+                                        Contact Us
+                                    </div>
+                                    <div class="fw-bold">
+                                        (+880) 184-480-8316
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex">
+                                <div class="d-flex flex-column  fontFooterliteText">
+                                    <div>
+                                        Mail to
+                                    </div>
+                                    <div class="fw-bold">
+                                        Name.info@email.com
+                                    </div>
+                                </div>
+                                <div class="fontFooterliteIcon align-self-center ps-3">
+                                    <i class="fa-solid fa-envelope-circle-check"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="container-fluid backgroundDarkSea p-0">
+            <div class="container colorWhite p-lg-5 p-md-4 p-3">
+
+                <div class="d-flex flex-column flex-lg-row justify-content-between">
+
+                    <div class="d-flex flex-column flex-md-row flex-box">
+                        <div class="d-flex flex-column p-3 flex-box fontInFooter">
+                            <div class="my-3 fs-sm-4 fs-5 fw-bold text-decoration-underline">
+                                <h4>About NED Connect</h4>
+                            </div>
+                            <div class="my-3 ">
+                                Empowering students to thrive in the workforce. We provide resources and connections
+                                for
+                                students to gain hands-on experience and launch their careers.
+                            </div>
+                            <div class="d-flex fs-4 mt-3">
+                                <div class="footerAboutIcons fbfootericon me-3">
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </div>
+                                <div class="footerAboutIcons me-3">
+                                    <a href="#">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </div>
+                                <div class="footerAboutIcons me-3">
+                                    <a href="#">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </div>
+                                <div class="footerAboutIcons">
+                                    <a href="#">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column p-3 flex-box fontInFooter">
+                            <div class="my-3 fs-sm-4 fs-5 fw-bold text-decoration-underline">
+                                <h4>Contacts</h4>
+                            </div>
+                            <div class="d-flex flex-column mt-3">
+                                <div>
+                                    <Address class="d-flex footerContactItems">
+                                        <div class="pe-2 fs-5">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                        </div>
+                                        <div class="FooterContactContent">
+                                            NED University of Engineering & Technology University Road, Karachi -
+                                            75270,
+                                            Pakistan.
+                                        </div>
+                                    </Address>
+                                </div>
+                                <div class="d-flex flex-row footerContactItems">
+                                    <div class="pe-2 fs-5 ">
+                                        <i class="fa-regular fa-envelope"></i>
+                                    </div>
+                                    <div class="footerStudentLinks FooterContactContent">
+                                        <a href="#">registrar@neduet.edu.pk</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row footerContactItems">
+                                    <div class="pe-2 fs-5 ">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    <div class="FooterContactContent">
+                                        (92-21) 99261261-8
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row footerContactItems">
+                                    <div class="pe-2 fs-5 ">
+                                        <i class="fa-solid fa-fax"></i>
+                                    </div>
+                                    <div class="FooterContactContent">
+                                        (92-21) 99261255
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row flex-box">
+                        <div class="d-flex flex-column p-3 flex-box fontInFooter">
+                            <div class="my-3 fs-sm-4 fs-5 fw-bold text-decoration-underline">
+                                <h4>Students</h4>
+                            </div>
+                            <div class="d-flex flex-column footerStudentLinks mt-3">
+                                <div>
+                                    <a href="#">Interships</a>
+                                </div>
+                                <div>
+                                    <a href="#">Jobs</a>
+                                </div>
+                                <div>
+                                    <a href="#">Student Affairs</a>
+                                </div>
+                                <div>
+                                    <a href="#">Student Job Portal</a>
+                                </div>
+                                <div>
+                                    <a href="#">Skills Training</a>
+                                </div>
+                                <div>
+                                    <a href="#">Interview Preparation</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column p-3 pe-0 flex-box fontInFooter">
+                            <div class="my-3 fs-sm-4 fs-5 fw-bold text-decoration-underline">
+                                <h4>Industrials</h4>
+                            </div>
+                            <div class="d-flex flex-column footerStudentLinks mt-3">
+                                <div>
+                                    <a href="#">Research & Development</a>
+                                </div>
+                                <div>
+                                    <a href="#">Industry Events</a>
+                                </div>
+                                <div>
+                                    <a href="#">Job Postings</a>
+                                </div>
+                                <div>
+                                    <a href="#">Talent Acquisition</a>
+                                </div>
+                                <div>
+                                    <a href="#">Consultancy Services</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="my-3 footerSeperation"></div>
+
+            <div class="container">
+                <div class="d-flex justify-content-center pb-5 pt-4">
+                    <div class="text-center colorWhite">
+                        <span><i class="fa-solid fa-copyright" style="color: #94bb44;"></i></span>
+                        <span class="copyRightText">2023 All Copy Rights reserved by</span>
+                        <span class="BottomNEDHeading">NED University</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        function onClickMenu() {
+            document.getElementById("menu").classList.toggle("icon");
+            var x = document.getElementById('myDropdown');
+            if (x.style.display === 'block') {
+                x.style.display = 'none';
+            } else {
+                x.style.display = 'block';
+            }
+
+        }
+
+        function registerUser() {
+
+            const firstName = document.getElementById("fname");
+            const lastName = document.getElementById("lname");
+            const contact = document.getElementById("contact");
+            const email = document.getElementById("email");
+            const password = document.getElementById("password");
+            let options = {
+                method: "POST",
+                headers: {
+                    "Content-type": "application/json"
+                },
+                body: JSON.stringify({
+                    "first_name": firstName.value,
+                    "last_name": lastName.value,
+                    "email": email.value,
+                    "password": password.value,
+                    "contact": contact.value,
+                    "category": "Student"
+                })
+            }
+
+            fetch('http://127.0.0.1:8000/auth-data', options)
+                .then(response => response.json())
+                .then(json => console.log(json))
+        }
+    </script>
+
+
+
+    <!-- Modal Login JS -->
+    <script>
+        var main_btn = document.querySelector(".main_btn");
+        var wrapper = document.querySelector(".wrapper");
+        var close_btns = document.querySelectorAll(".close_btn");
+
+        main_btn.addEventListener("click", function () {
+            wrapper.classList.add("active");
+        });
+
+        close_btns.forEach(function (btn) {
+            btn.addEventListener("click", function () {
+                wrapper.classList.remove("active");
+            });
+        });
+    </script>
+
+    <!-- Modal Login JS Dropdown -->
+    <script>
+        var main_btn = document.querySelector(".main_btn1");
+        var wrapper = document.querySelector(".wrapper");
+        var close_btns = document.querySelectorAll(".close_btn");
+
+        main_btn.addEventListener("click", function () {
+            wrapper.classList.add("active");
+        });
+
+        close_btns.forEach(function (btn) {
+            btn.addEventListener("click", function () {
+                wrapper.classList.remove("active");
+            });
+        });
+    </script>
+
+    <!-- Modal Register JS  -->
+    <script>
+        var main_btn2 = document.querySelector(".main_btn2");
+        var wrapper2 = document.querySelector(".wrapper2");
+        var close_btns = document.querySelectorAll(".close_btn");
+
+        main_btn2.addEventListener("click", function () {
+            wrapper2.classList.add("active");
+        });
+
+        close_btns.forEach(function (btn) {
+            btn.addEventListener("click", function () {
+                wrapper2.classList.remove("active");
+            });
+        });
+
+    </script>
+
+    <!-- Modal Register JS Dropdown -->
+    <script>
+        var main_btn2 = document.querySelector(".main_btn3");
+        var wrapper2 = document.querySelector(".wrapper2");
+        var close_btns = document.querySelectorAll(".close_btn");
+
+        main_btn2.addEventListener("click", function () {
+            wrapper2.classList.add("active");
+        });
+
+        close_btns.forEach(function (btn) {
+            btn.addEventListener("click", function () {
+                wrapper2.classList.remove("active");
+            });
+        });
+
+    </script>
+
+
+    <!-- JS here -->
+
+    <!-- All JS Custom Plugins Link Here here -->
+    <script src="/assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="/assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="/assets/js/popper.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="/assets/js/jquery.slicknav.min.js"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Range -->
+    <script src="/assets/js/owl.carousel.min.js"></script>
+    <script src="/assets/js/slick.min.js"></script>
+    <script src="/assets/js/price_rangs.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="/assets/js/wow.min.js"></script>
+    <script src="/assets/js/animated.headline.js"></script>
+    <script src="/assets/js/jquery.magnific-popup.js"></script>
+
+    <!-- Scrollup, nice-select, sticky -->
+    <script src="/assets/js/jquery.scrollUp.min.js"></script>
+    <script src="/assets/js/jquery.nice-select.min.js"></script>
+    <script src="/assets/js/jquery.sticky.js"></script>
+
+    <!-- contact js -->
+    <script src="/assets/js/contact.js"></script>
+    <script src="/assets/js/jquery.form.js"></script>
+    <script src="/assets/js/jquery.validate.min.js"></script>
+    <script src="/assets/js/mail-script.js"></script>
+    <script src="/assets/js/jquery.ajaxchimp.min.js"></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="/assets/js/plugins.js"></script>
+    <script src="/assets/js/main.js"></script>
+
+</body>
+
+</html>
