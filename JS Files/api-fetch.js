@@ -14,19 +14,19 @@ let options = {
     })
 }
 
-fetch('http://127.0.0.1:8000/auth-data', options)
-    .then(response => response.json())
-    .then(json => console.log(json))
+// fetch('', options)
+//     .then(response => response.json())
+//     .then(json => console.log(json))
 
 
-let p = fetch('http://127.0.0.1:8000/auth-data', {
-    headers: {
-        'Accept': 'application/json'
+async function getUsersData(url){
+    const response = await fetch(url);
+    var data = await response.json();
+    console.log(data[0]);
     }
-})
-    let response = p.response();
-    console.log(response.text());
 
-    console.log(text)
+getUsersData('http://127.0.0.1:8000/auth-data');
+// console.log(myArray[1]);
+// myArray = JSON.parse(data);
 // let p = await   fetch('http://127.0.0.1:8000/')
 // console.log(p);

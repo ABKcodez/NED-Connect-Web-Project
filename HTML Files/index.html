@@ -238,11 +238,11 @@
                             </div> -->
                             <form action="">
                                 <div class="col-12 input_box">
-                                    <input type="text" placeholder="" required>
+                                    <input id="login-email" type="text" placeholder="" required>
                                     <label class="input-label" for="email">Email</label>
                                 </div>
                                 <div class="col-12 input_box mt-4">
-                                    <input type="text" placeholder="" required>
+                                    <input id="login-password" type="password" placeholder="" required>
                                     <label class="input-label" for="Password">Password</label>
                                 </div>
                             </form>
@@ -255,7 +255,7 @@
                             <div class="btn_wrap FP-link">
                                 <a href="#" class="cancel_btn close_btn mx-3">Forget Password</a>
                                 <!-- <button class="cancel_btn close_btn">Cancel</button> -->
-                                <button class="create_btn">Log In</button>
+                                <button onclick="loginUser()" class="create_btn">Log In</button>
                             </div>
                         </div>
 
@@ -276,17 +276,13 @@
                 <div class="shadow close_btn"></div>
                 <div class="project">
                     <div class="header">
-                        <div class="title">Registertion</div>
+                        <div class="title">Registeration</div>
                         <span class="icon close_btn">
                             <ion-icon name="close-outline" class="i"></ion-icon>
                         </span>
                     </div>
                     <div class="container">
                         <div class="body">
-                            <!-- <div class="project_name_wrap">
-                                <p class="label_title">Email</p>
-                                <input type="text" class="input_text" placeholder="Enter your Email address" />
-                            </div> -->
                             <form action="">
                                 <div class="col-12 input_box">
                                     <input id="fname" type="text" placeholder="" name="first_name" required>
@@ -780,6 +776,21 @@
             fetch('http://127.0.0.1:8000/auth-data', options)
                 .then(response => response.json())
                 .then(json => console.log(json))
+        }
+
+        async function loginUser() {
+            const response = await fetch('http://127.0.0.1:8000/auth-data');
+            var data = await response.json();
+
+            const loginEmail = document.getElementById("login-email");
+            const loginPassword = document.getElementById("login-password");
+            
+            data.forEach(element => { 
+                if(loginEmail.value == element.email && loginPassword.value == element.password)
+                {
+                    alert("Login!");
+                }
+            });
         }
     </script>
 
