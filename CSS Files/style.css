@@ -303,7 +303,7 @@ body{
     font-weight: normal;
     position: absolute;
     pointer-events: none;
-    left: 20px;
+    left: 10px;
     top: 9px;
     letter-spacing: .5px;
     padding: 0px 5px;
@@ -327,7 +327,7 @@ body{
 .input_box input:focus ~ .input-label,
 .input_box input:valid ~ .input-label{
     top: -10px;
-    left: 20px;
+    left: 8px;
     font-size: 13px;
     color: #7ba327;
     font-weight: 500;
