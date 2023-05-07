@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoggedIn Navbar</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/media/ned-connect-favicon-circle-background.png">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/CSS Files/header_loggedIn.css">
+
+
+    <!-- For Modals -->
+    <link rel="stylesheet" href="/CSS Files/modalLogin.css">
+    <link rel="stylesheet" href="/CSS Files/modalRegistration.css">
+
+    <!-- For Modal header Cross button -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+
+
+    <!-- Bootstrap 5 CSS file -->
+    <link rel="stylesheet" href="/supporting-files/bootstrap.min.css">
+
+    <!-- Bootstrap 5 JS file -->
+    <script defer src="/supporting-files/bootstrap.bundle.min.js"></script>
+
+    <!-- Font Awesome all.css (For Icons) -->
+    <link rel="stylesheet" type="text/css" href="/supporting-files/all.min.css">
+    <!-- It only works when their is a folder 'webfonts' in the same directory -->
+
+</head>
+
+<body>
+    <header>
+        <!-- Header lite-->
+        <nav>
+            <div class="container-fluid navlite">
+                <div class="px-0 container d-flex flex-row justify-content-center justify-content-sm-end">
+                    <div class="border-0 rounded navliteItem">
+                        <a href="">
+                            <div class="fs-6">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="border-0 rounded navliteItem">
+                        <a href="">
+                            <div class="fs-6">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="border-0 rounded navliteItem">
+                        <a href="">
+                            <div class="fs-6 navliteFBicon">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="border-0 rounded navliteItem">
+                        <a href="">
+                            <div class="fs-6">
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <nav>
+            <div class="mainNavbar">
+                <div class="container px-lg-0">
+                    <div class="d-flex justify-content-between widthhundred">
+                        <div class="mainlogo my-auto">
+                            <a href="/HTML Files/index.html">
+                                <img class="img-fluid" src="/media/ned-connect-logoLight.svg" alt="Mainlogo">
+                            </a>
+                        </div>
+                        <div id="menu" class="d-block d-xl-none d-lg-none my-auto" onclick="onClickMenu()">
+                            <div class="bar" id="bar1"></div>
+                            <div class="bar" id="bar2"></div>
+                            <div class="bar" id="bar3"></div>
+                        </div>
+                        <!-- d-lg-block -->
+                        <div class="my-auto d-none d-lg-block">
+                            <div class="d-flex">
+                                <div class="navLinksName1 homePage ">
+                                    <a href="/HTML Files/index.html">Home</a>
+                                </div>
+                                <div class="navLinksName1">
+                                    <a href="#">News</a>
+                                </div>
+                                <div class="navLinksName1">
+                                    <a href="#">Jobs</a>
+                                </div>
+                                <div class="navLinksName1">
+                                    <a href="#">Events</a>
+                                </div>
+                                <div class="navLinksName1">
+                                    <a href="#">Achievements</a>
+                                </div>
+                                <div class="navLinksName1">
+                                    <a href="#">Industries</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="my-auto d-none d-lg-block">
+                            <div class="d-flex">
+                                <div class="loginLink1 main_btn">
+                                    <a href="#">Log in</a>
+                                </div>
+                                <div class="navLinksName1 registerButton1 main_btn2">
+                                    <a href="#" class="">Register</a>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div>
+                            <div class="loggedIn_User_Button d-flex justify-content-center align-items-center">
+                                <div class="loggedIn_image">
+                                    <!-- <img src="/media/account_icon_white.png" width="40px" alt=""> -->
+                                    <img src="/media/Dr-Mubashir-Khan.jpg" width="40px" alt="">
+                                </div>
+                                <div class="loggedIn_userName">
+                                    <p class="m-0">Mubashir</p>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="mydd" id="myDropdown">
+                <div class="container dd-shadow">
+                    <div class="dd-height d-flex flex-column justify-content-between">
+                        <div class="d-flex flex-column">
+                            <div class="dd-links">
+                                <a href="#">
+                                    <div class="navLinksName2">
+                                        News
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dd-links">
+                                <a href="#">
+                                    <div class="navLinksName2">
+                                        Jobs
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dd-links">
+                                <a href="#">
+                                    <div class="navLinksName2">
+                                        Events
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dd-links">
+                                <a href="#">
+                                    <div class="navLinksName2">
+                                        Achievements
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dd-links">
+                                <a href="#">
+                                    <div class="navLinksName2">
+                                        Industries
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dd-links">
+                                <a href="#">
+                                    <div class="navLinksName2 border-0">
+                                        Industries
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column m-3">
+                            <div class="dd-buttons">
+                                <a href="#">
+                                    <div class="registerButton2 main_btn3" onclick="onClickMenu()">
+                                        Register
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dd-buttons main_btn1" onclick="onClickMenu()">
+                                <a href="#">
+                                    <div class="loginButton2">
+                                        Log in
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Script for showing the dropdown -->
+    <script>
+        function onClickMenu() {
+            document.getElementById("menu").classList.toggle("icon");
+            var x = document.getElementById('myDropdown');
+            if (x.style.display === 'block') {
+                x.style.display = 'none';
+            } else {
+                x.style.display = 'block';
+            }
+
+        }
+    </script>
+
+    <!-- Modal LogIn -->
+    <div class="wrapper">
+        <!-- <button class="main_btn create_btn">Log in</button> -->
+
+        <div class="project_wrap">
+            <div class="shadow close_btn"></div>
+            <div class="project">
+                <div class="header">
+                    <div class="title">Log in</div>
+                    <span class="icon close_btn">
+                        <ion-icon name="close-outline" class="i"></ion-icon>
+                    </span>
+                </div>
+                <div class="container">
+                    <div class="body">
+                        <!-- <div class="project_name_wrap">
+                                    <p class="label_title">Email</p>
+                                    <input type="text" class="input_text" placeholder="Enter your Email address" />
+                                </div> -->
+                        <form action="">
+                            <div class="col-12 input_box">
+                                <input type="text" placeholder="" required>
+                                <label class="input-label" for="email">Email</label>
+                            </div>
+                            <div class="col-12 input_box mt-4">
+                                <input type="text" placeholder="" required>
+                                <label class="input-label" for="Password">Password</label>
+                            </div>
+                        </form>
+
+                    </div>
+
+                    <div class="footer">
+                        <!-- <div class="FP-link my-auto">
+                                </div> -->
+                        <div class="btn_wrap FP-link">
+                            <a href="#" class="cancel_btn close_btn mx-3">Forget Password</a>
+                            <!-- <button class="cancel_btn close_btn">Cancel</button> -->
+                            <button class="create_btn">Log In</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal Register -->
+    <div class="wrapper2">
+        <!-- <button class="main_btn create_btn">Log in</button> -->
+
+        <div class="project_wrap2">
+            <div class="shadow close_btn"></div>
+            <div class="project">
+                <div class="header">
+                    <div class="title">Registertion</div>
+                    <span class="icon close_btn">
+                        <ion-icon name="close-outline" class="i"></ion-icon>
+                    </span>
+                </div>
+                <div class="container">
+                    <div class="body">
+                        <!-- <div class="project_name_wrap">
+                                    <p class="label_title">Email</p>
+                                    <input type="text" class="input_text" placeholder="Enter your Email address" />
+                                </div> -->
+                        <form action="">
+                            <div class="col-12 input_box">
+                                <input type="text" placeholder="" required>
+                                <label class="input-label" for="name">Full Name</label>
+                            </div>
+                            <div class="col-12 input_box mt-3">
+                                <input type="tel" placeholder="" required>
+                                <label class="input-label" for="email">Contact No.</label>
+                            </div>
+                            <div class="col-12 input_box mt-3">
+                                <input type="text" placeholder="" required>
+                                <label class="input-label" for="email">Email</label>
+                            </div>
+                            <div class="col-12 input_box mt-3">
+                                <input type="password" placeholder="" required>
+                                <label class="input-label" for="Password">Password</label>
+                            </div>
+                            <div class="col-12 input_box mt-3">
+                                <input type="password" placeholder="" required>
+                                <label class="input-label" for="Password">Confirm Password</label>
+                            </div>
+                        </form>
+
+                    </div>
+
+                    <div class="footer">
+                        <!-- <div class="FP-link my-auto">
+                                </div> -->
+                        <div class="btn_wrap FP-link">
+                            <button class="cancel_btn close_btn">Cancel</button>
+                            <button class="create_btn">Register</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal Login JS -->
+    <script>
+        var main_btn = document.querySelector(".main_btn");
+        var wrapper = document.querySelector(".wrapper");
+        var close_btns = document.querySelectorAll(".close_btn");
+
+        main_btn.addEventListener("click", function () {
+            wrapper.classList.add("active");
+        });
+
+        close_btns.forEach(function (btn) {
+            btn.addEventListener("click", function () {
+                wrapper.classList.remove("active");
+            });
+        });
+    </script>
+
+    <!-- Modal Login JS Dropdown -->
+    <script>
+        var main_btn = document.querySelector(".main_btn1");
+        var wrapper = document.querySelector(".wrapper");
+        var close_btns = document.querySelectorAll(".close_btn");
+
+        main_btn.addEventListener("click", function () {
+            wrapper.classList.add("active");
+        });
+
+        close_btns.forEach(function (btn) {
+            btn.addEventListener("click", function () {
+                wrapper.classList.remove("active");
+            });
+        });
+    </script>
+
+    <!-- Modal Register JS  -->
+    <script>
+        var main_btn2 = document.querySelector(".main_btn2");
+        var wrapper2 = document.querySelector(".wrapper2");
+        var close_btns = document.querySelectorAll(".close_btn");
+
+        main_btn2.addEventListener("click", function () {
+            wrapper2.classList.add("active");
+        });
+
+        close_btns.forEach(function (btn) {
+            btn.addEventListener("click", function () {
+                wrapper2.classList.remove("active");
+            });
+        });
+
+    </script>
+
+    <!-- Modal Register JS Dropdown -->
+    <script>
+        var main_btn2 = document.querySelector(".main_btn3");
+        var wrapper2 = document.querySelector(".wrapper2");
+        var close_btns = document.querySelectorAll(".close_btn");
+
+        main_btn2.addEventListener("click", function () {
+            wrapper2.classList.add("active");
+        });
+
+        close_btns.forEach(function (btn) {
+            btn.addEventListener("click", function () {
+                wrapper2.classList.remove("active");
+            });
+        });
+
+    </script>
+</body>
+
+</html>
