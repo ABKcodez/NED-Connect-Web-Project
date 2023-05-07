@@ -165,12 +165,13 @@ body{
 
 /* DropDown Start */
 .dd-height{
-    height: 80vh;
+    /* height: 80vh; */
     position: absolute;
-    top: 104px;
+    top: 97px;
     z-index: 99;
     width: 1292px;
     background-color: #014548;
+    padding: 6px 0;
 }
 
 .navLinksName2{
@@ -266,6 +267,72 @@ body{
     height: 5px;
     width: 100%;
 }
+/* LoggedIn User button css end */
+
+
+/* LoggedIn Button CSS */
+.loggedIn_User_Button_DD img{
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.ddInsideDD{
+    margin: 12px;
+    background-color:  rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+/* LoggedIn DropDown */
+.LoggedIn_DD{
+    background-color: #94bb44;
+    padding: 12px;
+    border-radius: 5px;
+    position: absolute;
+    width: 162px;
+    display: none;
+}   
+
+.LoggedIn_DD li{
+    list-style: none;
+    border-bottom: 2px solid #004a4d;
+}
+.LoggedIn_DD a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+.LoggedIn_DD a:hover{
+    text-decoration: none;
+    color: #004a4d;
+}
+/* LoggedIn User button DropDown CSS */
+
+.loggedIn_userName_DD p{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+/* 
+.LoggedIn_DDInsideDD{
+    display: flex;
+    justify-content: space-evenly;
+} */
+
+.LoggedIn_DDInsideDD ul{
+    list-style: none;
+}
+.LoggedIn_DDInsideDD ul a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.LoggedIn_DDInsideDD li{
+    border: 0px solid;
+    border-bottom: 1px solid #fff;
+}
+
+
+
 /* LoggedIn css end */
 
 
