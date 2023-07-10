@@ -232,10 +232,7 @@
                     </div>
                     <div class="container">
                         <div class="body">
-                            <!-- <div class="project_name_wrap">
-                                <p class="label_title">Email</p>
-                                <input type="text" class="input_text" placeholder="Enter your Email address" />
-                            </div> -->
+                            <p id="register-msg"></p>
                             <form action="">
                                 <div class="col-12 input_box">
                                     <input id="login-email" type="text" placeholder="" required>
@@ -304,16 +301,16 @@
                                     <input id="password" type="password" placeholder="" name="password" required>
                                     <label class="input-label" for="Password">Password</label>
                                 </div>
-                                <div class="col-12 input_box mt-3">
+                                <!-- <div class="col-12 input_box mt-3">
                                     <input type="password" placeholder="" required>
                                     <label class="input-label" for="Password">Confirm Password</label>
-                                </div>
+                                </div> -->
                                 <div class="footer">
                                     <!-- <div class="FP-link my-auto">
                                     </div> -->
                                     <div class="btn_wrap FP-link mt-3">
                                         <button class="cancel_btn close_btn">Cancel</button>
-                                        <button onclick="registerUser()" class="create_btn">Register</button>
+                                        <button id="register-btn" onclick="registerUser()" class="create_btn">Register</button>
                                     </div>
                                 </div>
                             </form>

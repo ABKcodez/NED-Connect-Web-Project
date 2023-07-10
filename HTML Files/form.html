@@ -33,7 +33,7 @@
 
     <div class="container-md px-md-0 px-sm-4 px-3">
         <div class="row R-Form-Heading backgroundDarkSea my-3">
-            <h1 class="colorWhite py-1">Registration Form</h1>
+            <h1 class="colorWhite py-1">COMPLETE YOUR PROFILE</h1>
         </div>
         <div class="R-Form">
 
@@ -406,7 +406,7 @@
 
                 <div class="m-3">
                     <div class="d-flex justify-content-end submit-btn">
-                        <button type="submit" class="">Confirm Registration</button>
+                        <button type="submit" class="">Confirm Details</button>
                     </div>
                 </div>
 
@@ -478,8 +478,36 @@
             });
         });
 
+        // Function for adding all the details to the API
+        function confirmDetails() {
 
+            const firstName = document.getElementById("fname");
+            const lastName = document.getElementById("lname");
+            const contact = document.getElementById("contact");
+            const email = document.getElementById("email");
+            const password = document.getElementById("password");
+            let options = {
+                method: "POST",
+                headers: {
+                    "Content-type": "application/json"
+                },
+                body: JSON.stringify({
+                    "first_name": firstName.value,
+                    "last_name": lastName.value,
+                    "email": email.value,
+                    "password": password.value,
+                    "contact": contact.value,
+                    "category": "Student"
+                })
+            }
+
+            fetch('http://127.0.0.1:8000/auth-data', options)
+                .then(response => response.json())
+                .then(json => console.log(json))
+        }
     </script>
+
+
 </body>
 
 </html>
