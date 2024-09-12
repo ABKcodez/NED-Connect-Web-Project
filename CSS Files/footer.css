@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.backgroundLightGreen{
+    background-color: #94bb44;
+}
+
+.colorWhite{
+    color: white;
+}
+
+.backgroundDarkSea{
+    background-color: #004a4d;
+}
+
+
+
+
+
+/* Footer Start */
+/* FooterLite Start */
+.footerLogo img{
+    width: 20rem;
+}
+
+.fontFooterliteText{
+    font-size: 1.1rem;
+}
+
+.fontFooterliteIcon{
+    font-size: 2rem;
+}
+/* FooterLite End */
+/* FooterHeavy Start */
+.footerAboutIcons a{
+    font-size: 1.5rem;
+    padding: 4px 10px;
+    color: #fff;
+    /* border: 1px solid #fff; */
+    background-color: #06676c;
+    
+}
+.footerAboutIcons a:hover{
+    color: #fff;
+    background-color: #94bb44;
+}
+
+.fbfootericon a{
+    padding: 4px 14px !important;
+}
+
+.footerStudentLinks a{
+    color: #fff;
+    text-decoration: none;
+}
+.footerStudentLinks a:hover{
+    color: #94bb44;
+    text-decoration: underline;
+}
+.footerContactItems{
+    padding: 2px 0;
+}
+.footerContactItems i{
+    color: #fff;
+}
+.footerContactItems i:hover{
+    color: #94bb44;
+}
+.flex-box{
+    flex: 1;
+}
+.fontInFooter{
+    font-size: 1.2rem;
+}
+.footerSeperation{
+    border-bottom: 1px solid #ffffffd5;
+}
+.BottomNEDHeading{
+    color: #94bb44;
+    font-weight: 600;
+}
+.copyRightText{
+    color: #ffffffd5;
+}
+
+/* FooterHeavy End */
+
+/* Footer End */
+
+/* Footer End */
+@media only screen  and (max-width: 575px){
+    .footerAboutIcons a{
+        font-size: 1.25rem;
+    }
+    .fontInFooter{
+        font-size: 1rem;
+    }
+}
+

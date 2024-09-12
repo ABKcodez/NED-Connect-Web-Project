@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoggedIn Navbar</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/media/ned-connect-favicon-circle-background.png">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/CSS Files/header_loggedIn.css">
+
+
+    <!-- For Modals -->
+    <link rel="stylesheet" href="/CSS Files/modalLogin.css">
+    <link rel="stylesheet" href="/CSS Files/modalRegistration.css">
+
+    <!-- For Modal header Cross button -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+
+
+    <!-- Bootstrap 5 CSS file -->
+    <link rel="stylesheet" href="/supporting-files/bootstrap.min.css">
+
+    <!-- Bootstrap 5 JS file -->
+    <script defer src="/supporting-files/bootstrap.bundle.min.js"></script>
+
+    <!-- Font Awesome all.css (For Icons) -->
+    <link rel="stylesheet" type="text/css" href="/supporting-files/all.min.css">
+    <!-- It only works when their is a folder 'webfonts' in the same directory -->
+
+</head>
+
+<body>
+    <header>
+        <!-- Header lite-->
+        <nav>
+            <div class="container-fluid navlite">
+                <div class="px-0 container d-flex flex-row justify-content-center justify-content-sm-end">
+                    <div class="border-0 rounded navliteItem">
+                        <a href="">
+                            <div class="fs-6">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="border-0 rounded navliteItem">
+                        <a href="">
+                            <div class="fs-6">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="border-0 rounded navliteItem">
+                        <a href="">
+                            <div class="fs-6 navliteFBicon">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="border-0 rounded navliteItem">
+                        <a href="">
+                            <div class="fs-6">
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <nav>
+            <div class="mainNavbar">
+                <div class="container px-lg-0">
+                    <div class="d-flex justify-content-between widthhundred">
+                        <div class="mainlogo my-auto">
+                            <a href="/HTML Files/index.html">
+                                <img class="img-fluid" src="/media/ned-connect-logoLight.svg" alt="Mainlogo">
+                            </a>
+                        </div>
+                        <div id="menu" class="d-block d-xl-none d-lg-none my-auto" onclick="onClickMenu()">
+                            <div class="bar" id="bar1"></div>
+                            <div class="bar" id="bar2"></div>
+                            <div class="bar" id="bar3"></div>
+                        </div>
+                        <!-- d-lg-block -->
+                        <div class="my-auto d-none d-lg-block">
+                            <div class="d-flex">
+                                <div class="navLinksName1 homePage ">
+                                    <a href="/HTML Files/index.html">Home</a>
+                                </div>
+                                <div class="navLinksName1">
+                                    <a href="#">News</a>
+                                </div>
+                                <div class="navLinksName1">
+                                    <a href="#">Jobs</a>
+                                </div>
+                                <div class="navLinksName1">
+                                    <a href="#">Events</a>
+                                </div>
+                                <div class="navLinksName1">
+                                    <a href="#">Achievements</a>
+                                </div>
+                                <div class="navLinksName1">
+                                    <a href="#">Industries</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-auto d-none d-lg-block" onclick="loggedInUserDD()">
+                            <div class="loggedIn_User_Button d-flex justify-content-center align-items-center">
+                                <div class="loggedIn_image">
+                                    <!-- <img src="/media/account_icon_white.png" width="40px" alt=""> -->
+                                    <img src="/media/Dr-Mubashir-Khan.jpg" width="40px" alt="">
+                                </div>
+                                <div class="loggedIn_userName">
+                                    <p class="m-0">Mubashir</p>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <!-- LoggedIn User DropDown -->
+                            <ul class="LoggedIn_DD m-0" id="LoggedInUserDD">
+                                <a href="#">
+                                    <li class="py-2 pt-0">
+                                        <i class="fa-solid fa-user pe-2 fs-5"> </i>
+                                        My Profile
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li class="py-2">
+                                        <i class="fa-solid fa-pen pe-2 fs-5"></i>
+                                        Edit Profile
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li class="py-2">
+                                        <i class="fa-solid fa-gear pe-2 fs-5"></i>
+                                        Setting
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li class="py-2  pb-0 border-0">
+                                        <i class="fa-solid fa-right-from-bracket pe-2 fs-5"></i>
+                                        Logout
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="mydd" id="myDropdown">
+                <div class="container dd-shadow">
+                    <div class="dd-height d-flex flex-column justify-content-between">
+
+                        <div class="ddInsideDD">
+                            <div class="justify-content-center d-flex">
+                                <div class="py-2 loggedIn_User_Button_DD">
+                                    <!-- <img src="/media/account_icon_white.png" width="40px" alt=""> -->
+                                    <img src="/media/Dr-Mubashir-Khan.jpg" width="40px" alt="">
+                                </div>
+                                <div class="px-2 my-auto loggedIn_userName_DD">
+                                    <p class="m-0">Mubashir</p>
+                                </div>
+                                <div class="my-auto colorWhite">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="LoggedIn_DDInsideDD">
+                                <ul class="p-0 d-flex flex-column justify-content-center align-items-center">
+                                    <a href="#">
+                                        <li class="py-2">
+                                            <i class="fa-solid fa-user pe-2 fs-5"> </i>
+                                            My Profile
+                                        </li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="py-2">
+                                            <i class="fa-solid fa-pen pe-2 fs-5"></i>
+                                            Edit Profile
+                                        </li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="py-2">
+                                            <i class="fa-solid fa-gear pe-2 fs-5"></i>
+                                            Setting
+                                        </li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="py-2">
+                                            <i class="fa-solid fa-right-from-bracket pe-2 fs-5"></i>
+                                            Logout
+                                        </li>
+                                    </a>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="d-flex flex-column">
+                            <div class="dd-links">
+                                <a href="#">
+                                    <div class="navLinksName2">
+                                        News
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dd-links">
+                                <a href="#">
+                                    <div class="navLinksName2">
+                                        Jobs
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dd-links">
+                                <a href="#">
+                                    <div class="navLinksName2">
+                                        Events
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dd-links">
+                                <a href="#">
+                                    <div class="navLinksName2">
+                                        Achievements
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dd-links">
+                                <a href="#">
+                                    <div class="navLinksName2">
+                                        Industries
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dd-links">
+                                <a href="#">
+                                    <div class="navLinksName2 border-0">
+                                        Industries
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- <div class="d-flex flex-column m-3">
+                            <div class="dd-buttons">
+                                <a href="#">
+                                    <div class="registerButton2 main_btn3" onclick="onClickMenu()">
+                                        Register
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dd-buttons main_btn1" onclick="onClickMenu()">
+                                <a href="#">
+                                    <div class="loginButton2">
+                                        Log in
+                                    </div>
+                                </a>
+                            </div>
+                        </div> -->
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Script for showing the dropdown -->
+    <script>
+        function onClickMenu() {
+            document.getElementById("menu").classList.toggle("icon");
+            var x = document.getElementById('myDropdown');
+            if (x.style.display === 'block') {
+                x.style.display = 'none';
+            } else {
+                x.style.display = 'block';
+            }
+
+        }
+    </script>
+    <script>
+        function loggedInUserDD() {
+            var x = document.getElementById('LoggedInUserDD');
+            if (x.style.display === 'block') {
+                x.style.display = 'none';
+            } else {
+                x.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+
+</html>
